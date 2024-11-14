@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="397.0" prefWidth="759.0" spacing="20" style="-fx-background-image: url('photo_hopitale.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hopital.miniprojet.AdminHopitaleController">
+    <VBox alignment="CENTER" maxWidth="300.0" prefHeight="215.0" prefWidth="300.0" style="-fx-background-color: white;  -fx-padding: 10px; -fx-border-radius: 25px;  -fx-background-radius: 10px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 2);">
+    <GridPane alignment="CENTER" hgap="10" style="-fx-max-width: 300;" vgap="10">
+        <Label style="-fx-font-weight: bold;" text="Nom d'utilisateur:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label style="-fx-font-weight: bold;" text="Mot de passe:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+        <Button maxHeight="33.0" onAction="#handleLogin" prefHeight="10.0" prefWidth="122.0" style="-fx-background-color: white; -fx-text-fill: #007BFF; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 10px; -fx-border-radius: 10px; -fx-border-color: #007BFF;  -fx-background-radius: 5px;" text="Se connecter">
+         <VBox.margin>
+            <Insets top="24.0" />
+         </VBox.margin></Button>
+
+        <VBox.margin>
+         <Insets right="-275.0" />
+      </VBox.margin>
+    </VBox>
+</VBox>

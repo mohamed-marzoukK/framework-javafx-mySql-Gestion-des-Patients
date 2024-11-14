@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.hopital.miniprojet.MedicamentHopitaleController" spacing="20" style="-fx-padding: 20; -fx-background-color: linear-gradient(to bottom, #f0f8ff, #e6e6fa); -fx-border-radius: 10; -fx-background-radius: 10;">
+    <children>
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Gestion des Médicaments" />
+        <TableView fx:id="medicamentTable" style="-fx-border-color: #dddddd; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <columns>
+                <TableColumn fx:id="refColumn" text="Référence" style="-fx-alignment: CENTER; -fx-font-weight: bold;" />
+                <TableColumn fx:id="libelleColumn" text="Libellé" style="-fx-alignment: CENTER; -fx-font-weight: bold;" />
+                <TableColumn fx:id="prixColumn" text="Prix" style="-fx-alignment: CENTER; -fx-font-weight: bold;" />
+            </columns>
+        </TableView>
+        <HBox spacing="20" style="-fx-padding: 20;">
+            <VBox spacing="10">
+                <TextField fx:id="refField" promptText="Référence" style="-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%); -fx-font-size: 14px; -fx-background-radius: 10; -fx-padding: 10;" />
+                <TextField fx:id="libelleField" promptText="Libellé" style="-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%); -fx-font-size: 14px; -fx-background-radius: 10; -fx-padding: 10;" />
+                <TextField fx:id="prixField" promptText="Prix" style="-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%); -fx-font-size: 14px; -fx-background-radius: 10; -fx-padding: 10;" />
+            </VBox>
+            <VBox spacing="10">
+                <Button fx:id="btnAjouter"  text="Ajouter" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 10;" />
+                <Button fx:id="btnModifier"  text="Modifier" style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 10;" />
+                <Button fx:id="btnSupprimer"  text="Supprimer" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 10;" />
+            </VBox>
+        </HBox>
+    </children>
+</VBox>
